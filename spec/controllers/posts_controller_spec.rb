@@ -9,7 +9,7 @@ RSpec.describe PostsController, type: :controller do
 
       get :index
 
-      expect(assigns[:posts]).to eq([post1, post2, post2])
+      expect(assigns[:posts]).to eq([post1, post2])
       expect(response).to render_template("index")
     end
   end
